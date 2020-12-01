@@ -38,7 +38,7 @@ public class StartProgramm {
 		helios.addPatient(p3);
 		helios.addPatient(p4);
 		helios.addPatient(p5);
-		System.out.println(helios.getPatients().toString()+" these are patients");
+		//System.out.println(helios.getPatients().toString()+" these are patients");
 
 		if(args.length > 0 && args[0].equals("GUI")) {
 			JKrankenhaus krankenhausFenster = new JKrankenhaus(helios);
@@ -47,15 +47,15 @@ public class StartProgramm {
 		Scanner sc = new Scanner(System.in);
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		do {
-			System.out.println("(01) Patient anlegen");
-			System.out.println("(02) Gesetzliche Versicherung anlegen und Patientennummer zuordnen");
-			System.out.println("(03) Privatversicherung anlegen und Patientennummer zuordnen");
-			System.out.println("(04) Patient mit Versicherungen anzeigen (Auswahl durch Patientennummer)");
-			System.out.println("(05) Patient mit Versicherungen anzeigen (Auswahl durch Name)");
-			System.out.println("(06) Versicherung anzeigen (Auswahl durch KVN)");
-			System.out.println("(07) Alle Patienten sortiert nach aufsteigender Patientennummer anzeigen");
-			System.out.println("(08) Alle Patienten sortiert nach aufsteigendem Nachnamen");
-			System.out.println("(09) Alle Krankenversicherungen unsortiert anzeigen");
+			System.out.println("(01) INAKTIVE Patient anlegen");
+			System.out.println("(02) INAKTIVE Gesetzliche Versicherung anlegen und Patientennummer zuordnen");
+			System.out.println("(03) INAKTIVE Privatversicherung anlegen und Patientennummer zuordnen");
+			System.out.println("(04) INAKTIVE Patient mit Versicherungen anzeigen (Auswahl durch Patientennummer)");
+			System.out.println("(05) INAKTIVE Patient mit Versicherungen anzeigen (Auswahl durch Name)");
+			System.out.println("(06) INAKTIVE Versicherung anzeigen (Auswahl durch KVN)");
+			System.out.println("(07) INAKTIVE Alle Patienten sortiert nach aufsteigender Patientennummer anzeigen");
+			System.out.println("(08) INAKTIVE Alle Patienten sortiert nach aufsteigendem Nachnamen");
+			System.out.println("(09) INAKTIVE Alle Krankenversicherungen unsortiert anzeigen");
 			System.out.println("(10) Daten Export");
 			System.out.println("(11) Daten Import");
 			System.out.println("(12) Patienten nach Namen sortiert als CSV-Datei exportieren");
